@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-width: 375px;
+  font-size: 1.6rem;
+  color: #302d2c;
+  font-family: "Outfit", Arial, Helvetica, sans-serif;
+  background-color: #f3e6d8;
+}
+
+.nutrition__heading, .instructions__heading, .ingredients__heading {
+  margin-bottom: 20px;
+  font-family: "Young Serif", Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 3rem;
+  color: #854632;
+}
+
+.instructions-list, .ingredients__list, .time-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style-position: inside;
+}
+.instructions-list li, .ingredients__list li, .time-list li {
+  padding-left: 45px;
+}
+.instructions-list li::before, .ingredients__list li::before, .time-list li::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+}
+.instructions-list b, .ingredients__list b, .time-list b {
+  font-weight: 700;
+}
+
+.main {
+  margin: 0 auto;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #ffffff;
+}
+
+section:not(.omelette) {
+  max-width: 315px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.omelette__img {
+  width: 100%;
+}
+
+.recipe__heading {
+  font-family: "Young Serif", Georgia, "Times New Roman", Times, serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.time {
+  padding: 15px 20px;
+  background-color: #fff5fa;
+  border-radius: 10px;
+}
+.time__heading {
+  color: #7b284f;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.time-list__item {
+  text-indent: -43px;
+}
+.time-list__item::marker {
+  color: #7b284f;
+  font-size: 1.1rem;
+}
+
+.ingredients__item {
+  text-indent: -38px;
+}
+.ingredients__item::marker {
+  color: #854632;
+  font-size: 1.1rem;
+}
+
+.instructions {
+  padding: 20px 0;
+  border-top: 1px solid #e4ded8;
+  border-bottom: 1px solid #e4ded8;
+}
+.instructions-list__item {
+  text-indent: -43px;
+}
+.instructions-list__item::marker {
+  color: #854632;
+  font-weight: 700;
+}
+
+.nutrition-table__descr {
+  padding-bottom: 20px;
+  font-weight: 400;
+  text-align: left;
+}
+.nutrition-table__row:not(:last-of-type) .nutrition-table__item {
+  border-bottom: 1px solid #e4ded8;
+}
+.nutrition-table__item {
+  padding: 10px 20px;
+}
+.nutrition-table__item:nth-of-type(2n) {
+  color: #854632;
+  font-weight: 700;
+}
+
+@media (min-width: 500px) {
+  section:not(.omelette) {
+    max-width: 750px;
+  }
+  .main {
+    max-width: 750px;
+    padding: 40px;
+  }
+  .omelette img {
+    border-radius: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .main {
+    max-width: 750px;
+    margin: 30px auto 50px;
+    border-radius: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .main {
+    padding: 50px;
+    margin: 40px auto;
+    gap: 30px;
+  }
+  .time {
+    padding: 30px;
+  }
+}
+.footer {
+  padding: 20px 0;
+}
+.footer__info {
+  font-size: 11px;
+  text-align: center;
+}
+.footer a {
+  color: #3e52a3;
+}/*# sourceMappingURL=index.css.map */
